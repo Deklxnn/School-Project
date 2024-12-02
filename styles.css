@@ -1,0 +1,300 @@
+.box-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-hover:hover {
+  transform: translateY(-5px);
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.soft-transition {
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Literata", serif;
+  background: linear-gradient(135deg, #3a4b76, #000000);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(58, 75, 118, 0.8), transparent);
+  z-index: -1;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #3a4b76;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #c4c4c4;
+  color: #ffffff;
+}
+
+#HeadingBattle {
+  width: 60%;
+  position: relative;
+  font-size: 150px;
+  margin-bottom: 90px;
+}
+
+#LandingDates {
+  margin-top: 120px;
+}
+
+#LandingDesc {
+  font-size: 42px;
+  width: 60%;
+}
+
+.nav-link:hover {
+  color: #c4c4c4;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#cardAbout {
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f8f4f4;
+}
+
+.h2A {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.mt-75 {
+  margin-top: 75px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mlr-30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-container img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+.image-box {
+  text-align: center;
+  width: 22%;
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+.image-text {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.image-description {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  min-height: 50px;
+}
+
+.ticket-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.ticket-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 22%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.ticket-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+.ticket-card h4 {
+  font-size: 1.3rem;
+  color: #ffd700;
+}
+
+.ticket-card p {
+  color: #f8f4f4;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: #f8f4f4;
+}
+
+.ticket-description {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.contact-info h4 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #f8f4f4;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media p {
+  font-size: 1rem;
+  color: #f8f4f4;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #c4c4c4;
+}
